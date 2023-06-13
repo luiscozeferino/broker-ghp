@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: '1 <router-outlet></router-outlet>'
 })
-export class AppComponent {
-  title = 'broker';
+export class AppComponent implements OnInit {
+  constructor() { }
+  ngOnInit(): void {
+    setTimeout(() => {
+      console.log("teste");
+    }, 5000)
+
+   }
+
 }
