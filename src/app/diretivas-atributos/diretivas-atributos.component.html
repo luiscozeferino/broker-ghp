@@ -1,5 +1,13 @@
+<div *ngIf="nome != 'luis'">
 <h2>ngModel</h2>
 <h3>OBS:para utilização do ngModel é necessário importar o FormsModule</h3>
+</div>
+
+<input [(ngModel)]="nome">
+<button (click)="salvar()">Salvar</button>
+<li *ngFor="let item of list">{{ item.nome }}</li>
+
+
 <br><br><br><br><br><br>
 <hr>
 

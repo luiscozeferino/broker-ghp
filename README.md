@@ -1,3 +1,9 @@
+# Instrutor
+Dener Troquatte - Desenvolvedor Web
+
+# Exercicios do curso de angular https://itau.udemy.com/course/curso-de-angular/
+Formação Angular Básico ao Avançado, coloque suas habilidades Angular em ação com este mergulho abrangente no Angular!
+
 # Broker
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.

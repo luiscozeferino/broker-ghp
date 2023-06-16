@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./diretivas-atributos.component.css']
 })
 export class DiretivasAtributosComponent implements OnInit {
+  public nome: string = "";
+  public list: Array<{ nome: string }> = [];
   public heightPx: string = "20px";
   public backgroundColor: string = "red";
 
@@ -35,5 +37,9 @@ export class DiretivasAtributosComponent implements OnInit {
       }
     }, 2000)
 
+  }
+  public salvar() {
+    this.list.push({nome: this.nome});
+    this.nome = "";
   }
 }
