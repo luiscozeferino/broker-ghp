@@ -1,8 +1,8 @@
 # Instrutor
 Dener Troquatte - Desenvolvedor Web
 
-# Exercicios do curso de angular https://itau.udemy.com/course/curso-de-angular/
-Formação Angular Básico ao Avançado, coloque suas habilidades Angular em ação com este mergulho abrangente no Angular!
+# Exercicios do curso de angular
+Formação Angular Básico ao Avançado, coloque suas habilidades Angular em ação com este mergulho abrangente no Angular, link do curso https://itau.udemy.com/course/curso-de-angular/
 
 # Broker
 
