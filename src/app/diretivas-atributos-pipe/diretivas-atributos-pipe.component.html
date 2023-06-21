@@ -1,0 +1,18 @@
+<h1>Diretivas atributos pipe | </h1>
+
+<input [(ngModel)]="nome">
+<button (click)="salvar()">Salvar</button>
+<li *ngFor="let item of list">{{ item.nome | uppercase | slice:0:2 }}</li>
+<br>
+{{ data | date: 'dd/MM/yyyy' }}
+<p>onde consultar as pipes https://angular.io/api?type=pipe</p>
+<br>
+<h2>exemplo de pile com json</h2>
+<div>
+  <p>Without JSON pipe:</p>
+  <pre>{{ object }}</pre>
+  <p>With JSON pipe:</p>
+  <pre>{{ object | json }}</pre>
+</div>
+<br><br><br><br><br><br>
+<hr>

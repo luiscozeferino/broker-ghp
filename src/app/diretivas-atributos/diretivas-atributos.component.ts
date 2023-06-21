@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivasAtributosComponent implements OnInit {
   public nome: string = "";
+  //public list: Array<{ nome: string }> = [{ nome: "luis" }];
   public list: Array<{ nome: string }> = [];
   public heightPx: string = "20px";
   public backgroundColor: string = "red";

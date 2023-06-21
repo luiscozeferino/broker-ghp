@@ -8,6 +8,7 @@ import { DataBidingComponent } from './data-biding/data-biding.component';
 import { FormsModule } from '@angular/forms';
 import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
 import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atributos.component';
+import { DiretivasAtributosPipeComponent } from './diretivas-atributos-pipe/diretivas-atributos-pipe.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atr
     TitleComponent,
     DataBidingComponent,
     DiretivasEstruturaisComponent,
-    DiretivasAtributosComponent
+    DiretivasAtributosComponent,
+    DiretivasAtributosPipeComponent
   ],
   imports: [
     BrowserModule,

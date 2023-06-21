@@ -1,6 +1,36 @@
+<!-- eslint-disable @angular-eslint/template/alt-text -->
+<!-- eslint-disable @angular-eslint/template/eqeqeq -->
+
+<ng-content select="h1"></ng-content>
+
+<h2>ng-content</h2>
+<p>aqui representa o ng-content</p>
+<p>blablablablablablablablablablablablablablablablablabla</p>
+
+<ng-content select="h3"></ng-content>
+
+<br><br><br><br><br><br>
+<hr>
+
+<h2>ng-template</h2>
+<p>ng-template carrega antes do DOM então nesse caso ele nem cria os codigos abaixo</p>
+<ng-template ngFor let-item [ngForOf]="list">
+  <p>
+    {{ item.nome }}
+  </p>
+</ng-template>
+<br><br>
+Código dentro do ng-template: <img src="/assets/ng-template.png">
+<br><br>
+<input [(ngModel)]="nome">
+<button (click)="salvar()">Salvar</button>
+
+
+<br><br><br><br><br><br>
+<hr>
 <div *ngIf="nome != 'luis'">
-<h2>ngModel</h2>
-<h3>OBS:para utilização do ngModel é necessário importar o FormsModule</h3>
+  <h2>ngModel</h2>
+  <h3>OBS:para utilização do ngModel é necessário importar o FormsModule</h3>
 </div>
 
 <input [(ngModel)]="nome">

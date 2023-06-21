@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 //import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, Input, OnChanges, OnInit } from '@angular/core';
 import { Component } from '@angular/core';
 
@@ -9,7 +10,15 @@ import { Component } from '@angular/core';
     <app-title title="bem vindo" *ngIf="destruir"></app-title>
     <br>
     <button (click)="destruirComponente();">Destruir</button>-->
-    <app-diretivas-atributos></app-diretivas-atributos>
+    <app-diretivas-atributos-pipe></app-diretivas-atributos-pipe>
+    <app-diretivas-atributos>
+      <h1>Aulas de diretivas de atributo 01</h1>
+      <h3>Final do exercicio ng-content 01</h3>
+    </app-diretivas-atributos>
+    <app-diretivas-atributos>
+      <h1>Aulas de diretivas de atributo 02</h1>
+      <h3>Final do exercicio ng-content 02</h3>
+    </app-diretivas-atributos>
     <app-diretivas-estruturais></app-diretivas-estruturais>
     <br><br><br><br><br><br><br><br><br><br><br><hr><br>
     <app-data-biding></app-data-biding>
@@ -18,7 +27,6 @@ import { Component } from '@angular/core';
 })
 //export class AppComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
 export class AppComponent  {
-
   //public valor: number = 1;
   //public destruir:boolean = true;
   constructor() { }
