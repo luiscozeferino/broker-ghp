@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
 import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atributos.component';
 import { DiretivasAtributosPipeComponent } from './diretivas-atributos-pipe/diretivas-atributos-pipe.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { DiretivasAtributosPipeComponent } from './diretivas-atributos-pipe/dire
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

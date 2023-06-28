@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
     <app-title title="bem vindo" *ngIf="destruir"></app-title>
     <br>
     <button (click)="destruirComponente();">Destruir</button>-->
+    <app-header></app-header>
     <app-diretivas-atributos-pipe></app-diretivas-atributos-pipe>
     <app-diretivas-atributos>
       <h1>Aulas de diretivas de atributo 01</h1>
