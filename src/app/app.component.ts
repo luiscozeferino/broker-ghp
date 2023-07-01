@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-inferrable-types */
 /* eslint-disable @typescript-eslint/no-empty-function */
 //import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, Input, OnChanges, OnInit } from '@angular/core';
 import { Component } from '@angular/core';
@@ -10,6 +11,18 @@ import { Component } from '@angular/core';
     <app-title title="bem vindo" *ngIf="destruir"></app-title>
     <br>
     <button (click)="destruirComponente();">Destruir</button>-->
+    Output<br>
+    <ng-template [ngIf]="getDados">
+      <h1>{{getDados.nome}}</h1>
+      <h2>{{getDados.idade}}</h2>
+
+    </ng-template>
+    <br>
+    <app-output (enviarDados)="setDados($event)"></app-output>
+    <br><br>Input<br>
+    <app-input [contador]="addValor"></app-input>
+    <button (click)="add()">Adiciona</button>
+    <br><br><br>
     <app-header></app-header>
     <app-diretivas-atributos-pipe></app-diretivas-atributos-pipe>
     <app-diretivas-atributos>
@@ -31,6 +44,16 @@ export class AppComponent  {
   //public valor: number = 1;
   //public destruir:boolean = true;
   constructor() { }
+  public addValor: number = 0;
+  public add() {
+    this.addValor += 1;
+  }
+
+  public getDados: {nome: string, idade: number} | undefined
+  public setDados(event: {nome: string, idade: number}) {
+    this.getDados = event;
+  }
+
   /*destruirComponente(): void {
     this.destruir = false;
   }
