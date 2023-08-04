@@ -6,12 +6,15 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
+    <b><h1>Serviços, Http e observable</h1></b><br>
+    <app-food-list></app-food-list>
+    <br><br>
     <!--{{valor}}
     <button (click)="adicionar();">Adicionar</button>
     <app-title title="bem vindo" *ngIf="destruir"></app-title>
     <br>
     <button (click)="destruirComponente();">Destruir</button>-->
-    Output<br>
+    <b><h1>Output</h1></b><br>
     <ng-template [ngIf]="getDados">
       <h1>{{getDados.nome}}</h1>
       <h2>{{getDados.idade}}</h2>
@@ -19,7 +22,7 @@ import { Component } from '@angular/core';
     </ng-template>
     <br>
     <app-output (enviarDados)="setDados($event)"></app-output>
-    <br><br>Input<br>
+    <br><br><b><h1>Input</h1></b><br>
     <app-input [contador]="addValor"></app-input>
     <button (click)="add()">Adiciona</button>
     <br><br><br>
